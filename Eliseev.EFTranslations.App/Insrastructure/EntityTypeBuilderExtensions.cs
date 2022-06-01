@@ -1,7 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Linq.Expressions;
-
-
+﻿using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Eliseev.EFTranslations.App.Insrastructure
 {

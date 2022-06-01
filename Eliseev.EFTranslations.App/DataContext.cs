@@ -11,12 +11,6 @@ namespace Eliseev.EFTranslations.App
         public DataContext()
             : base()
         {
-            //this.Database.EnsureCreated();
-
-            if (this.Database.EnsureCreated())
-            {
-                //Populate();
-            }
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,7 +20,6 @@ namespace Eliseev.EFTranslations.App
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             ////modelBuilder.Entity<SomeEntity>()
             ////    .Property(x => x.Name)
             ////    .HasValueGenerator<SomeEntity, string>(x => x.Id.ToString());
@@ -40,21 +33,5 @@ namespace Eliseev.EFTranslations.App
         }
 
         public DbSet<SomeEntity> SomeEntities { get; set; }
-
-
-        //private void Populate()
-        //{
-        //    this.SomeEntities.AddRange(
-        //            new SomeEntity
-        //            {
-        //                Name3 = "NoGen"
-        //            },
-        //           new SomeEntity { }
-        //        );
-
-
-        //    this.SaveChanges();
-        //}
     }
-
 }

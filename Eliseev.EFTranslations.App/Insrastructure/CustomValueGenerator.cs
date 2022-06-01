@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 
-
-
 namespace Eliseev.EFTranslations.App.Insrastructure
 {
     public class CustomValueGenerator<TEntityType, TProperty> : ValueGenerator<TProperty>
@@ -26,5 +24,4 @@ namespace Eliseev.EFTranslations.App.Insrastructure
 
         public override bool GeneratesTemporaryValues { get; }
     }
-
 }

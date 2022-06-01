@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-
-
 namespace Eliseev.EFTranslations.App.Insrastructure
 {
     public static class PropertyBuilderExtensions
