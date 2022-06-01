@@ -46,7 +46,7 @@ namespace Eliseev.EFTranslations.App
 
             modelBuilder.Entity<SomeEntity>()
                 .Property(x => x.Name)
-                .ValueGeneratedOnAddOrUpdate()
+                //.ValueGeneratedOnAddOrUpdate()
                 .HasValueGenerator(((x, y)
                 => new CustomGenerator<SomeEntity, string>((x) => x.Id.ToString())));
         }
@@ -60,7 +60,7 @@ namespace Eliseev.EFTranslations.App
         {
             this.SomeEntities.Add(new SomeEntity
             {
-                Name = "jhg"
+                ////Name = "jhg"
             });
 
 
