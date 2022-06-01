@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Eliseev.EFTranslations.App.models
+namespace Eliseev.EFTranslations.App.Models
 {
     public class SomeEntity
     {
@@ -15,7 +10,9 @@ namespace Eliseev.EFTranslations.App.models
         public int Id { get; set; }
 
 
-        public string Name { get; private set; }
+        public string Property1 { get; private set; }
+        public string Property2 { get; private set; } = "NoGen";
+        public string Property3 { get; set; }
 
     }
 }
