@@ -14,5 +14,7 @@ namespace Eliseev.EFTranslations.App.Models
         public string Property2 { get; private set; } = "NoGen";
         
         public string Property3 { get; set; }
+
+        public string Property4 { get; set; }
     }
 }

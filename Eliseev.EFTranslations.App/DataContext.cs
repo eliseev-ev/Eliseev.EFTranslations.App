@@ -28,7 +28,8 @@ namespace Eliseev.EFTranslations.App
             modelBuilder.Entity<SomeEntity>()
                 .PropertyValueGenerator(x => x.Property1, x => x.Id.ToString())
                 .PropertyValueGenerator(x => x.Property2, x => x.Id.ToString())
-                .PropertyValueGenerator(x => x.Property3, x => x.Id.ToString());
+                .PropertyValueGenerator(x => x.Property3, x => x.Id.ToString())
+                .PropertyValueGenerator(x => x.Property4, x => x.Property1.ToString() + x.Property2.ToString());
 
         }
 

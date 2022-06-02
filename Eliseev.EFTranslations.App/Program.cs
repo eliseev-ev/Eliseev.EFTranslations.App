@@ -18,4 +18,5 @@ await dataContext.SaveChangesAsync();
 
 Assert.AreEqual("1", someEntity.Property1);
 Assert.AreEqual("NoGen", someEntity.Property2);
-Assert.AreEqual("NoGen", someEntity.Property2);
+Assert.AreEqual("NoGen", someEntity.Property3);
+Assert.AreEqual("1NoGen", someEntity.Property4);

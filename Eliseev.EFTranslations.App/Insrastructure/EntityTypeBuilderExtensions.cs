@@ -19,5 +19,4 @@ namespace Eliseev.EFTranslations.App.Insrastructure
             return entityTypeBuilder;
         }
     }
-
 }
